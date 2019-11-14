@@ -19,7 +19,7 @@ stream = ["bytes"]
 
 [dependencies]
 log = "0.4"
-futures = { version = "0.3", features = ["async-await"] }
+futures-preview = { version = "0.3.0-alpha.19", features = ["async-await"] }
 pin-project = "0.4"
 tokio-io = "0.2.0-alpha.6"
 
@@ -38,13 +38,15 @@ optional = true
 version = "0.2.0"
 
 [dependencies.tokio-net]
-optional = true
 version = "0.2.0-alpha.6"
+#git = "https://github.com/tokio-rs/tokio.git"
+optional = true
 features = ["tcp"]
 
 [dependencies.tokio-tls]
-optional = true
 version = "0.3.0-alpha.6"
+optional = true
+#git = "https://github.com/tokio-rs/tokio.git"
 
 [dev-dependencies]
 tokio = "0.2.0-alpha.6"
